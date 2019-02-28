@@ -9,7 +9,6 @@ import ifpb.edu.br.Livro.Livro;
 import ifpb.edu.br.Livro.LivroIF;
 import ifpb.edu.br.Livro.PersistirEmArquivo;
 import ifpb.edu.br.Livro.PersistirEmSGBD;
-import java.util.List;
 
 /**
  *

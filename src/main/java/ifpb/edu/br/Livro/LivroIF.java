@@ -11,12 +11,8 @@ import java.util.List;
  *
  * @author Cliente
  */
-
-
 public interface LivroIF {
-    
-  public void salvar( Livro livro);  
-    
-   
-  
+
+    public void salvar(Livro livro);
+
 }

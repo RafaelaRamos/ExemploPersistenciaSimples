@@ -16,17 +16,16 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
 import org.hibernate.annotations.GenericGenerator;
-
 
 /**
  *
  * @author Cliente
  */
 @Entity
-public class Livro implements Serializable{
-   @Id
+public class Livro implements Serializable {
+
+    @Id
     @GenericGenerator(name = "increment", strategy = "increment")
     @GeneratedValue(generator = "increment")
     private int id;
@@ -36,15 +35,15 @@ public class Livro implements Serializable{
     private String escritor;
     private String editora;
     @Temporal(TemporalType.DATE)
-    private Date  dataEdicao;
+    private Date dataEdicao;
     private int numDePaginas;
     private String descricao;
 
-    public Livro( String titulo, String escritor, String editora, int numDePaginas,String descricao) {
-        
+    public Livro(String titulo, String escritor, String editora, int numDePaginas, String descricao) {
+
         this.titulo = titulo;
         this.escritor = escritor;
-        this.descricao= descricao;
+        this.descricao = descricao;
         this.editora = editora;
         this.dataEdicao = new Date();
         this.numDePaginas = numDePaginas;
@@ -93,7 +92,6 @@ public class Livro implements Serializable{
         this.dataEdicao = dataEdicao;
     }
 
-   
     public int getNumDePaginas() {
         return numDePaginas;
     }
@@ -161,18 +159,9 @@ public class Livro implements Serializable{
 
     @Override
     public String toString() {
-        return "Livro{" + "id=" + id + ", titulo=" + titulo + ", escritor=" + escritor 
+        return "Livro{" + "id=" + id + ", titulo=" + titulo + ", escritor=" + escritor
                 + ", editora=" + editora + ", dataEdicao=" + dataEdicao + ", "
                 + "numDePaginas=" + numDePaginas + ", descricao=" + descricao + '}';
     }
-    
 
-    
-    
-    
-    
-    
-
-  
-    
 }

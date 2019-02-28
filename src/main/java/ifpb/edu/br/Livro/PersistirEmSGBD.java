@@ -29,13 +29,4 @@ public class PersistirEmSGBD implements LivroIF//
         transaction.commit();
     }
 
-   
-    
 }
-
-
-
-    
-
-
-
